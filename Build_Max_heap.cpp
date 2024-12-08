@@ -4,7 +4,7 @@
 
 //time-complexity of making max-heap using step-down process is : O(log n) , where n=no.of nodes 
 //Heafiy(placing node at right place in max-heap)
-/*
+
 void Heafiy(int arr[], int n, int index){
    int largest= index;
    int left= (2*index) +1;
@@ -40,10 +40,15 @@ void print(int arr[] , int n){
    print(arr,n);
    return 0;
  }
-*/
+// output: 
+// Elements of max-heap:
+// 555  88  33  44  75  3  21  34  23  6  
+
+
 
 /* Min-Heap */
  // for min-heap : we only need to change in heafiy 1:largest varible change name into smallest , 2: and in dono if condition arr[left] > arr[largest]   me < less than sign hoga.
+ /*
 void Heafiy(int arr[], int n, int index){
    int smallest= index;
    int left= (2*index) +1;
@@ -67,7 +72,7 @@ void Build_Max_Heap(int arr[], int n){
 }
 
 void print(int arr[] , int n){
-   cout<<"Elements of max-heap:\n";
+   cout<<"Elements of min-heap:\n";
    for(int i=0; i<n; i++) cout<<arr[i]<<"  ";
    cout<<endl;
 }
@@ -79,4 +84,7 @@ void print(int arr[] , int n){
    print(arr,n);
    return 0;
  }
-
+ */
+//output : 
+// Elements of min-heap:
+// 3  6  21  34  44  23  33  555  88  75

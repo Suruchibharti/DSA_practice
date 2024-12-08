@@ -92,3 +92,16 @@ int main(){
    H1.print();
    return 0;
 }
+
+//output: 
+// 4 elements is inserted into heap
+// 14 elements is inserted into heap
+// 11 elements is inserted into heap
+// 114 elements is inserted into heap
+// 24 elements is inserted into heap
+// 1 elements is inserted into heap
+// overlow elements of max-heap: 114 24 11 4 14 1
+// 114 is deleted from max-heap
+// 24 is deleted from max-heap
+// 14 is deleted from max-heap
+// elements of max-heap: 11 4 1

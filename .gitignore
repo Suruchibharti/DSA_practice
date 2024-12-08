@@ -1,3 +1,3 @@
-/Heap.exe
-/Bst.exe
-/Build_Max_heap.exe
+//To ignore all .exe files
+
+*.exe
