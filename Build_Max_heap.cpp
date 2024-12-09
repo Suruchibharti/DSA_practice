@@ -27,6 +27,15 @@ void Build_Max_Heap(int arr[], int n){
    }
 }
 
+//sort arry using Heap sort: t.c=O(n logn) s.c=O(1 )
+void sortArray(int arr[], int n){
+   for(int i=n-1; i>0; i--){
+      swap(arr[0], arr[i]);
+      Heafiy(arr,i,0 );
+   }
+   cout<<endl;
+}
+
 void print(int arr[] , int n){
    cout<<"Elements of max-heap:\n";
    for(int i=0; i<n; i++) cout<<arr[i]<<"  ";
@@ -37,6 +46,8 @@ void print(int arr[] , int n){
    int arr[]={23,44,21,34,6,3,33,555,88,75};
    int n=10;
    Build_Max_Heap(arr,n);
+   print(arr,n);
+   sortArray(arr,n);
    print(arr,n);
    return 0;
  }
